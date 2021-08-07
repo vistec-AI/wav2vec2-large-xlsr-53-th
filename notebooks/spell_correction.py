@@ -101,4 +101,4 @@ def correct_sentence(sentence: str, custom_dict: Dict[str, str] = {}) -> None:
             corrected_sentence = corrected_sentence.replace(f"ํ{next_char}า", f"{next_char}ำ");
             print(f"Corrected `ํ` + `{next_char}` + `า` => `{next_char}` + `ำ`");
     
-    return correct_sentence
+    return corrected_sentence
