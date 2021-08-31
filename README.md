@@ -119,8 +119,8 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 
 |                          | WER        | CER        |
 |--------------------------|------------|------------|
-| without spell correction | 0.20754109 | 0.03727126 |
-| with spell correction    | 0.24589107 | 0.06105792 |
+| without spell correction | 0.20755690 | 0.02813019 |
+| with spell correction    | 0.24592172 | 0.05225761 |
 
 ## Ackowledgements
 * model training and validation notebooks/scripts [@cstorm125](https://github.com/cstorm125/)
