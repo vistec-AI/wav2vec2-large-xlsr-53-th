@@ -117,10 +117,13 @@ training_args = TrainingArguments(
 
 We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp) 2.3.1 and CER. We also measure performance when spell correction using [TNC](http://www.arts.chula.ac.th/ling/tnc/) ngrams is applied. Evaluation codes can be found in `notebooks/wav2vec2_finetuning_tutorial.ipynb`
 
-|                          | WER        | CER        |
-|--------------------------|------------|------------|
-| without spell correction | 0.20755690 | 0.02813019 |
-| with spell correction    | 0.24592172 | 0.05225761 |
+|                               | WER        | CER        |
+|-------------------------------|------------|------------|
+| Ours without spell correction | 0.20755690 | 0.02813019 |
+| Ours with spell correction    | 0.24592172 | 0.05225761 |
+| Google Web Speech API         | 0.13711234 | 0.07357340 |
+| Microsoft Bing Speech API     | TBD        | TBD        |
+| NECTEC AI for Thai Partii API | TBD        | TBD        |
 
 ## Ackowledgements
 * model training and validation notebooks/scripts [@cstorm125](https://github.com/cstorm125/)
