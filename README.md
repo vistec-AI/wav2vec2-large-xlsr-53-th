@@ -119,11 +119,15 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 
 |                               | WER        | CER        |
 |-------------------------------|------------|------------|
-| Ours without spell correction | 0.13634024 | 0.02813019 |
+| Ours without spell correction | 0.13634024 | **0.02813019** |
 | Ours with spell correction    | 0.17996397 | 0.05225761 |
-| Google Web Speech API         | 0.13711234 | 0.07357340 |
-| Microsoft Bing Speech API     | 0.12578819 | 0.05016620 |
-| NECTEC AI for Thai Partii API | API N/A    | API N/A    |
+| Google Web Speech API※        | 0.13711234 | 0.07357340 |
+| Microsoft Bing Speech API※    | **0.12578819** | 0.05016620 |
+| NECTEC AI for Thai Partii API※※| API N/A    | API N/A    |
+
+※ APIs are not finetuned with Common Voice 7.0 data
+
+※※ At the time of testing (September 1, 2021), we were not able to call the Partii API with instructions in [AI for Thai webiste](https://aiforthai.in.th/aiplatform/#/speechtotext) as well as by uploading `.wav` files to [the demo](https://aiforthai.in.th/service_st.php).
 
 ## Ackowledgements
 * model training and validation notebooks/scripts [@cstorm125](https://github.com/cstorm125/)
