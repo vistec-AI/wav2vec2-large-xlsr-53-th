@@ -119,8 +119,8 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 
 |                               | WER        | CER        |
 |-------------------------------|------------|------------|
-| Ours without spell correction | 0.20755690 | 0.02813019 |
-| Ours with spell correction    | 0.24592172 | 0.05225761 |
+| Ours without spell correction | 0.13634024 | 0.02813019 |
+| Ours with spell correction    | 0.17996397 | 0.05225761 |
 | Google Web Speech API         | 0.13711234 | 0.07357340 |
 | Microsoft Bing Speech API     | TBD        | TBD        |
 | NECTEC AI for Thai Partii API | TBD        | TBD        |
