@@ -133,8 +133,7 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 ## Ackowledgements
 * model training and validation notebooks/scripts [@cstorm125](https://github.com/cstorm125/)
 * dataset cleaning scripts [@tann9949](https://github.com/tann9949)
-* dataset splits [@ekapolc](https://github.com/ekapolc/) and [@14mss
-14mss](https://github.com/14mss)
+* dataset splits [@ekapolc](https://github.com/ekapolc/) and [@14mss](https://github.com/14mss)
 * running the training [@mrpeerat](https://github.com/mrpeerat)
 * spell correction [@wannaphong](https://github.com/wannaphong)
 
