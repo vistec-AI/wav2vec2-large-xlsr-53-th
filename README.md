@@ -115,7 +115,7 @@ training_args = TrainingArguments(
 
 ## Evaluation
 
-We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp) 2.3.1 and CER. We also measure performance when spell correction using [TNC](http://www.arts.chula.ac.th/ling/tnc/) ngrams is applied. Evaluation codes can be found in `notebooks/wav2vec2_finetuning_tutorial.ipynb`
+We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp) 2.3.1 and CER. We also measure performance when spell correction using [TNC](http://www.arts.chula.ac.th/ling/tnc/) ngrams is applied. Evaluation codes can be found in `notebooks/wav2vec2_finetuning_tutorial.ipynb`. Benchmark is performed on `test-unique` split.
 
 |                               | WER        | CER        |
 |-------------------------------|------------|------------|
@@ -131,7 +131,7 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 ## Ackowledgements
 * model training and validation notebooks/scripts [@cstorm125](https://github.com/cstorm125/)
 * dataset cleaning scripts [@tann9949](https://github.com/tann9949)
-* dataset splits [@ekapolc](https://github.com/ekapolc/) and his students
+* dataset splits [@ekapolc](https://github.com/ekapolc/) and [@14mss](https://github.com/14mss)
 * running the training [@mrpeerat](https://github.com/mrpeerat)
 * spell correction [@wannaphong](https://github.com/wannaphong)
 
