@@ -115,16 +115,16 @@ training_args = TrainingArguments(
 
 ## Evaluation
 
-We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp) 2.3.1 and CER. We also measure performance when spell correction using [TNC](http://www.arts.chula.ac.th/ling/tnc/) ngrams is applied. Evaluation codes can be found in `notebooks/wav2vec2_finetuning_tutorial.ipynb`. Benchmark is performed on `test-unique` split.
+We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp) 2.3.1 and [deepcut](https://github.com/rkcosmos/deepcut), and CER. We also measure performance when spell correction using [TNC](http://www.arts.chula.ac.th/ling/tnc/) ngrams is applied. Evaluation codes can be found in `notebooks/wav2vec2_finetuning_tutorial.ipynb`. Benchmark is performed on `test-unique` split.
 
-|                               | WER        | CER        |
-|-------------------------------|------------|------------|
-| Ours without spell correction | 0.13634024 | **0.02813019** |
-| Ours with spell correction    | 0.17996397 | 0.05225761 |
-| [Google Web Speech API](https://developers.google.com/web/updates/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API)※        | 0.13711234 | 0.07357340 |
-| [Microsoft Bing Speech API](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-api/)※    | **0.12578819** | 0.05016620 |
-| [Amazon Transcribe](https://aws.amazon.com/transcribe/)※            | 0.2186334  | 0.07077562 |
-| [NECTEC AI for Thai Partii API](https://aiforthai.in.th/aiplatform/#/speechtotext)※| 0.20105887    | 0.09551027    |
+|                                | WER PyThaiNLP 2.3.1 | WER deepcut    | CER            |
+|--------------------------------|---------------------|----------------|----------------|
+| Ours without spell correction  | 0.13634024          | **0.08152052** | **0.02813019** |
+| Ours with spell correction     | 0.17996397          | 0.14167975     | 0.05225761     |
+| Google Web Speech API※         | 0.13711234          | 0.10860058     | 0.07357340     |
+| Microsoft Bing Speech API※     | **0.12578819**      | 0.09620991     | 0.05016620     |
+| Amazon Transcribe※             | 0.2186334           | 0.14487553     | 0.07077562     |
+| NECTEC AI for Thai Partii API※ | 0.20105887          | 0.15515631     | 0.09551027     |
 
 ※ APIs are not finetuned with Common Voice 7.0 data
 
