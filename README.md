@@ -119,6 +119,7 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 
 |                                | WER PyThaiNLP 2.3.1 | WER deepcut    | CER            |
 |--------------------------------|---------------------|----------------|----------------|
+| [Kaldi from scratch](https://github.com/vistec-AI/commonvoice-th)         | 0.2304              |                | 0.0757         |
 | Ours without spell correction  | 0.13634024          | **0.08152052** | **0.02813019** |
 | Ours with spell correction     | 0.17996397          | 0.14167975     | 0.05225761     |
 | Google Web Speech API※         | 0.13711234          | 0.10860058     | 0.07357340     |
