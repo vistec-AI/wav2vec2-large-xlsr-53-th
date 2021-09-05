@@ -7,7 +7,7 @@ tags:
 - automatic-speech-recognition
 - speech
 - xlsr-fine-tuning
-license: apache-2.0
+license: cc-by-sa 4.0
 ---
 
 # `wav2vec2-large-xlsr-53-th`
