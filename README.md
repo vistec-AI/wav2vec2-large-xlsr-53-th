@@ -121,13 +121,13 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 
 |                                | WER PyThaiNLP 2.3.1 | WER deepcut    | CER            |
 |--------------------------------|---------------------|----------------|----------------|
-| [Kaldi from scratch](https://github.com/vistec-AI/commonvoice-th)         | 0.2304              |                | 0.0757         |
-| Ours without spell correction  | 0.13634024          | **0.08152052** | **0.02813019** |
-| Ours with spell correction     | 0.17996397          | 0.14167975     | 0.05225761     |
-| Google Web Speech API※         | 0.13711234          | 0.10860058     | 0.07357340     |
-| Microsoft Bing Speech API※     | **0.12578819**      | 0.09620991     | 0.05016620     |
-| Amazon Transcribe※             | 0.2186334           | 0.14487553     | 0.07077562     |
-| NECTEC AI for Thai Partii API※ | 0.20105887          | 0.15515631     | 0.09551027     |
+| [Kaldi from scratch](https://github.com/vistec-AI/commonvoice-th)         | 23.04              |                | 7.57         |
+| Ours without spell correction  | 13.634024          | **8.152052** | **2.813019** |
+| Ours with spell correction     | 17.996397          | 14.167975     | 5.225761     |
+| Google Web Speech API※         | 13.711234          | 10.860058     | 7.357340     |
+| Microsoft Bing Speech API※     | **12.578819**      | 9.620991     | 5.016620     |
+| Amazon Transcribe※             | 21.86334           | 14.487553     | 7.077562     |
+| NECTEC AI for Thai Partii API※ | 20.105887          | 15.515631     | 9.551027     |
 
 ※ APIs are not finetuned with Common Voice 7.0 data
 
