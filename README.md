@@ -131,6 +131,10 @@ We benchmark on the test set using WER with words tokenized by [PyThaiNLP](https
 
 ※ APIs are not finetuned with Common Voice 7.0 data
 
+## License
+
+Models are under CC-BY-SA 4.0. All codes are under Apache 2.0.
+
 ## Ackowledgements
 * model training and validation notebooks/scripts [@cstorm125](https://github.com/cstorm125/)
 * dataset cleaning scripts [@tann9949](https://github.com/tann9949)
